@@ -1,0 +1,11 @@
+<!-- Notice the action to the Native Form Endpoint, the ID on the form and the target= to the NAME of the hidden iFram. -->
+<form id="testForm" action="https://app-3QNJD0A8WW.marketingautomation.services/webforms/receivePostback/MzawMDE3M7YwAgA/bafa84ce-1b50-4a3e-a832-3b654f9ac01e/jsonp/" target="testFrame"></form>
+
+<!-- Notice the declared name of the iFrame, and the display: none; to hide it. -->
+<iframe name="testFrame" style="display: none;"></iframe>
+<script>
+    // This is just to redirect to the user to the desired thank you page.
+    document.getElementById("testForm").addEventListener("submit", () => {
+        window.location.replace("https://www.google.com");
+    })
+</script>
